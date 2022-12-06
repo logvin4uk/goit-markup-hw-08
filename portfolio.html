@@ -19,15 +19,17 @@
     <link rel="stylesheet" href="./css/main.min.css">
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
-  <body>
+  <body style>
     <div class="header-container">
       <header class="header">
         <a href="./index.html" class="logo"><span class="logo--blue">Web</span>Studio</a>
         <nav>
           <ul class="site-nav">
-            <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студія</a></li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link current">Портфоліо</a>
+              <a href="./index.html" class="site-nav__link current">Студія</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
             </li>
             <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
           </ul>
@@ -50,6 +52,11 @@
             >
           </li>
         </ul>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu--tongle" width="40" height="40">
+            <use href="./images/icons_sprite.svg#icon-tongle_menu"></use>
+          </svg>
+        </button>
       </header>
     </div>
     <main>

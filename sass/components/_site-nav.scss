@@ -1,7 +1,16 @@
 .site-nav {
-  display: flex;
+  display: none;
   list-style-type: none;
-  gap: 50px;
+  
+
+   @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 50px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+}
 }
 
 .site-nav__link {

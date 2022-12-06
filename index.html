@@ -16,16 +16,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
-  <body>
+  <body style>
     <div class="header-container">
       <header class="header">
         <a href="./index.html" class="logo"><span class="logo--blue">Web</span>Studio</a>
         <nav>
           <ul class="site-nav">
-            <li class="site-nav__item"><a href="./index.html" class="site-nav__link current">Студія</a></li>
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link current">Студія</a>
+            </li>
             <li class="site-nav__item">
               <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
             </li>
@@ -50,6 +52,11 @@
             >
           </li>
         </ul>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu--tongle" width="40" height="40">
+            <use href="./images/icons_sprite.svg#icon-tongle_menu"></use>
+          </svg>
+        </button>
       </header>
     </div>
     <main>
@@ -155,9 +162,9 @@
           <ul class="command__list">
             <li class="command__item">
               <img
-                src="./images/img_igor.jpg"
+                src="./images/img_igor450.jpg"
                 alt="Product Designer - Ігор Дем'яненко"
-                width="270"
+                width="450"
                 class="command__images"
               />
               <div class="member">
@@ -221,9 +228,9 @@
             </li>
             <li class="command__item">
               <img
-                src="./images/img_olga.jpg"
+                src="./images/img_olga450.jpg"
                 alt="Ольга Рєпіна - Frontend Developer"
-                width="270"
+                width="450"
                 class="command__images"
               />
               <div class="member">
@@ -231,10 +238,11 @@
                 <p class="member__skill">Frontend Developer</p>
                 <ul class="social">
                   <li class="social__item">
-                  <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  class="social__link              rel="noprener noreferrer"
+                    <a
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      class="social__link"
+                      rel="noprener noreferrer"
                       aria-label="Instagram icon"
                     >
                       <svg class="social__icon--light" weight="20" height="20">
@@ -286,9 +294,9 @@
             </li>
             <li class="command__item">
               <img
-                src="./images/img_mykola.jpg"
+                src="./images/img_mykola450.jpg"
                 alt="Микола Тарасов-Marketing"
-                width="270"
+                width="450"
                 class="command__images"
               />
               <div class="member">
@@ -352,9 +360,9 @@
             </li>
             <li class="command__item">
               <img
-                src="./images/img_misha.jpg"
+                src="./images/img_misha450.jpg"
                 alt="Михайло Єрмаков-UI Designer"
-                width="270"
+                width="450"
                 class="command__images"
               />
               <div class="member">
@@ -476,17 +484,19 @@
       <div class="container">
         <div class="footer-container">
           <div class="footer-address">
-            <a href="./index.html" class="logo footer__logo">
+            <a href="./index.html" class="footer__logo">
               <span class="logo--blue">Web</span>Studio
             </a>
             <address>
               <p class="footer-address__text">м. Київ, пр-т Лесі Українки, 26</p>
-              <a href="mailto:info@devstudio.com" class="footer-address__contact">info@devstudio.com</a>
+              <a href="mailto:info@devstudio.com" class="footer-address__contact"
+                >info@devstudio.com</a
+              >
               <a href="tel:+380961111111" class="footer-address__contact">+38 096 111 11 11</a>
             </address>
           </div>
           <div class="footer-socials">
-            <h3 class="footer__header ">приєднуйтесь</h3>
+            <h3 class="footer__header">приєднуйтесь</h3>
             <ul class="footer-socials__list">
               <li class="footer-socials__item">
                 <a
@@ -625,7 +635,51 @@
         </form>
       </div>
     </div>
+
+    <!-- phone menu -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu--close" width="40" height="40">
+          <use href="./images/icons_sprite.svg#icon-close_menu"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile__menu">
+        <li class="mobile__item"><a href="./index.html" class="mobile__link">Студія</a></li>
+        <li class="mobile__item"><a href="./portfolio.html" class="mobile__link">Портфоліо</a></li>
+        <li class="mobile__item"><a href="" class="mobile__link">Контакти</a></li>
+      </ul>
+      <div class="menu-adress">
+        <a href="tel:+38 096 111 11 11" class="menu-adress__phone">+38 096 111 11 11</a>
+        <a href="mailto:info@devstudio.com" class="menu-adress__mail">info@devstudio.com</a>
+      
+
+      <ul class="menu-social">
+        <li class="menu-social__item">
+          <a href="https://www.instagram.com/" class="menu-social__link">Instagram</a>
+        </li>
+        <li class="menu-social__item">
+          <a href="https://www.facebook.com/" class="menu-social__link">Twitter</a>
+        </li>
+        <li class="menu-social__item">
+          <a href="https://twitter.com/" class="menu-social__link">Facebook</a>
+        </li>
+        <li class="menu-social__item">
+          <a href="https://www.linkedin.com/" class="menu-social__link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+
     <!--scripts-->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

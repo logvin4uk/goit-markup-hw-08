@@ -1,14 +1,12 @@
 .hero {
-  max-width: 1600px;
-
   background-color: var(--bgcolor-foter-top);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/background-hero.jpg);
+    url(../../images/mobile_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-
-  padding-top: 200px;
-  padding-bottom: 200px;
+  background-size: cover;
+  padding-top: 116px;
+  padding-bottom: 116px;
   margin-left: auto;
   margin-right: auto;
 
@@ -16,37 +14,57 @@
 
   &__header {
     font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60 / 44);
+    font-size: 26px;
+    line-height: calc(42 / 26);
+
+    text-align: center;
     letter-spacing: 0.06em;
+
     text-transform: uppercase;
+
     color: #ffffff;
 
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 696px;
+    padding-bottom: 30px;
   }
 
   &__button {
     background: var(--active-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
-    display: inline-block;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
     letter-spacing: 0.06em;
+
+    margin-left: auto;
+    margin-right: auto;
+
     color: #ffffff;
+
     border: 0px;
     cursor: pointer;
-    padding: 10px 32px;
+    padding: 10px 24px;
+
     transition-property: background;
     transition: var(--main-animation);
 
     &:hover {
       background: #188ce8;
     }
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/background-hero.jpg);
   }
 }

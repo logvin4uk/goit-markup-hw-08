@@ -1,21 +1,23 @@
-.footer-adress {
-  margin-right: 70px;
-}
+// .footer-adress {
+//   // margin-right: 70px;
+// }
 .footer__logo {
   display: block;
   font-family: var(--logo-font);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
-    letter-spacing: 0.03em;
-    margin-bottom: 20px;
-    text-decoration: none;
-    color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(28 / 26);
+  letter-spacing: 0.03em;
+
+  margin-bottom: 20px;
+
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .footer-address__text {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 
   font-style: normal;
   font-size: 14px;
@@ -36,7 +38,7 @@
   transition-property: color;
   transition: var(--main-animation);
   &:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
   &:hover,
   &:focus {

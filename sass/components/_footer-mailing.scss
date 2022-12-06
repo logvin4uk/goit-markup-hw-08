@@ -1,11 +1,13 @@
 .mailing__form {
   display: flex;
-  gap: 12px;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
 }
 
 .mailing__input {
   background-color: #2f303a;
-  width: 358px;
+  min-width: 450px;
   height: 50px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
