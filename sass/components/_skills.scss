@@ -1,0 +1,40 @@
+.skills__header {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .skills__list {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+  }
+  
+  .skills__overlay {
+    position: relative;
+  }
+  .skills__container {
+    background-color: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skills__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    color: #ffffff;
+  }

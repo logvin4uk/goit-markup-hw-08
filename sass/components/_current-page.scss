@@ -1,0 +1,20 @@
+  .current {
+    color: var(--active-color);
+    
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+    
+      border-radius: 2px;
+      background-color: var(--active-color);
+      opacity: 1;
+    
+      transform: translateX(-50%);
+      display: block;
+      width: 110%;
+      height: 4px;
+    }
+  }
+  
