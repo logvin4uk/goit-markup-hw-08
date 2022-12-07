@@ -1,9 +1,12 @@
 .filter-list {
   list-style-type: none;
   display: flex;
-  justify-content: center;
+  justify-content: baseline;
+
   gap: 8px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  // margin-bottom: 50px;
 }
 
 .filter-list__button {

@@ -19,11 +19,24 @@
 
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  column-gap: 30px;
+  gap: var(--indent);
+
+  --items: 1;
+
+  @media screen and (min-width: 480px) {
+    --items: 2;
+  }
+
+  @media screen and (min-width: 768px) {
+    --items: 3;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --items: 6;
+  }
 }
 .company__item {
-  width: 210px;
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
   height: 92px;
 }
 

@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Портфоліо</title>
+    <title>WebStudio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -16,7 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
   <body style>
@@ -84,10 +84,10 @@
               <a href="" class="project__link">
                 <div class="project__thumb">
                   <img
-                    src="./images/portfolio-photo/tehnokryak.jpg"
+                    src="./images/portfolio/project-1/mb-prj1@x1.jpg"
                     alt="Проект Технокряк"
                     class="project__img"
-                    width="370"
+                    
                   />
                   <div class="overlay">
                     <p class="overlay__text">
@@ -106,9 +106,9 @@
             <li class="projects__item">
               <a href="" class="project__link">
                 <img
-                  src="./images/portfolio-photo/poster.jpg"
+                  src="./images/portfolio/project-2/mb-prj2@x1.jpg"
                   alt="Постер New Orlean vs Golden Star"
-                  width="370"
+                
                 />
                 <div class="project__description">
                   <h2 class="project__header">Постер New Orlean vs Golden Star</h2>
@@ -119,9 +119,9 @@
             <li class="projects__item">
               <a href="" class="project__link">
                 <img
-                  src="./images/portfolio-photo/seafood.jpg"
+                  src="./images/portfolio/project-3/mb-prj3@x1.jpg"
                   alt="Ресторан Seafood"
-                  width="370"
+                
                 />
                 <div class="project__description">
                   <h2 class="project__header">Ресторан Seafood</h2>
@@ -131,7 +131,7 @@
             </li>
             <li class="projects__item">
               <a href="" class="project__link">
-                <img src="./images/portfolio-photo/headphones.jpg" alt="Проєкт Prime" width="370" />
+                <img src="./images/portfolio/project-4/mb-prj4@x1.jpg" alt="Проєкт Prime" />
                 <div class="project__description">
                   <h2 class="project__header">Проєкт Prime</h2>
                   <p class="project__text">Маркетинг</p>
@@ -140,7 +140,7 @@
             </li>
             <li class="projects__item">
               <a href="" class="project__link">
-                <img src="./images/portfolio-photo/boxes.jpg" alt="Проєкт Boxes" width="370" />
+                <img src="./images/portfolio/project-5/mb-prj5@x1.jpg" alt="Проєкт Boxes"  />
                 <div class="project__description">
                   <h2 class="project__header">Проєкт Boxes</h2>
                   <p class="project__text">Додаток</p>
@@ -150,9 +150,9 @@
             <li class="projects__item">
               <a href="" class="project__link">
                 <img
-                  src="./images/portfolio-photo/Inspiration-has-no-Borders.jpg"
+                  src="./images/portfolio/project-6/mb-prj6@x1.jpg"
                   alt="Inspiration has no Borders"
-                  width="370"
+                  
                 />
                 <div class="project__description">
                   <h2 class="project__header">Inspiration has no Borders</h2>
@@ -163,9 +163,9 @@
             <li class="projects__item">
               <a href="" class="project__link">
                 <img
-                  src="./images/portfolio-photo/vydannia-limited-edition.jpg"
+                  src="./images/portfolio/project-7/mb-prj7@x1.jpg"
                   alt="Видання Limited Edition"
-                  width="370"
+                  
                 />
                 <div class="project__description">
                   <h2 class="project__header">Видання Limited Edition</h2>
@@ -175,7 +175,7 @@
             </li>
             <li class="projects__item">
               <a href="" class="project__link">
-                <img src="./images/portfolio-photo/project-lab.jpg" alt="Проєкт LAB" width="370" />
+                <img src="./images/portfolio/project-8/mb-prj8@x1.jpg" alt="Проєкт LAB" />
                 <div class="project__description">
                   <h2 class="project__header">Проєкт LAB</h2>
                   <p class="project__text">Маркетинг</p>
@@ -185,9 +185,9 @@
             <li class="projects__item">
               <a href="" class="project__link">
                 <img
-                  src="./images/portfolio-photo/growing-business.jpg"
+                  src="./images/portfolio/project-9/mb-prj9@x1.jpg"
                   alt="Growing Business"
-                  width="370"
+                  
                 />
                 <div class="project__description">
                   <h2 class="project__header">Growing Business</h2>
@@ -294,5 +294,44 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu--close" width="40" height="40">
+          <use href="./images/icons_sprite.svg#icon-close_menu"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile__menu">
+        <li class="mobile__item"><a href="./index.html" class="mobile__link">Студія</a></li>
+        <li class="mobile__item"><a href="./portfolio.html" class="mobile__link">Портфоліо</a></li>
+        <li class="mobile__item"><a href="" class="mobile__link">Контакти</a></li>
+      </ul>
+      <div class="menu-adress">
+        <a href="tel:+38 096 111 11 11" class="menu-adress__phone">+38 096 111 11 11</a>
+        <a href="mailto:info@devstudio.com" class="menu-adress__mail">info@devstudio.com</a>
+
+        <ul class="menu-social">
+          <li class="menu-social__item">
+            <a href="https://www.instagram.com/" class="menu-social__link">Instagram</a>
+          </li>
+          <li class="menu-social__item">
+            <a href="https://www.facebook.com/" class="menu-social__link">Twitter</a>
+          </li>
+          <li class="menu-social__item">
+            <a href="https://twitter.com/" class="menu-social__link">Facebook</a>
+          </li>
+          <li class="menu-social__item">
+            <a href="https://www.linkedin.com/" class="menu-social__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
