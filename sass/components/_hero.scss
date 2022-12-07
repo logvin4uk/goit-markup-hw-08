@@ -1,6 +1,9 @@
 .hero {
   background-color: var(--bgcolor-foter-top);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/mb-bg@1x.jpg);
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/studio/mb-bg@1x.jpg');
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -10,6 +13,44 @@
   margin-right: auto;
 
   text-align: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/studio/mb-bg@2x.jpg');
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/studio/tab-bg@1x.jpg');
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/studio/tab-bg@2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/studio/desck-bg@1x.jpg');
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/studio/desck-bg@2x.jpg');
+    }
+  }
 
   &__header {
     font-weight: 900;
@@ -24,6 +65,17 @@
     color: #ffffff;
 
     padding-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      max-width: 360px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 700px;
+      font-size: 44px;
+      line-height: calc(60 / 44);
+    }
   }
 
   &__button {
@@ -56,14 +108,5 @@
     &:hover {
       background: #188ce8;
     }
-  }
-
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 1600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/background-hero.jpg);
   }
 }

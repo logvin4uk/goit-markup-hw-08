@@ -1,31 +1,26 @@
 .logo {
-    font-family: var(--logo-font);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: calc(28 / 24);
-    letter-spacing: 0.03em;
+  font-family: var(--logo-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.03em;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 
-    color:#212121;
+  color: #212121;
 
-    padding-top: 16px;
-    padding-bottom: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
-    @media screen and (min-width: 768px) {
-      margin-right: 88px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      font-size: 26px;
-      line-height: calc(31/26);
-    }
-
-    
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: calc(31 / 26);
   }
-  .logo--blue {
-    color: var(--active-color);
-  }
+}
+.logo--blue {
+  color: var(--active-color);
+}

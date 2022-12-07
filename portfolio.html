@@ -20,16 +20,16 @@
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
   <body style>
-    <div class="header-container">
+    <div class="header-wrapper">
       <header class="header">
         <a href="./index.html" class="logo"><span class="logo--blue">Web</span>Studio</a>
         <nav>
           <ul class="site-nav">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link current">Студія</a>
+              <a href="./index.html" class="site-nav__link">Студія</a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
+              <a href="./portfolio.html" class="site-nav__link current">Портфоліо</a>
             </li>
             <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
           </ul>
@@ -84,10 +84,19 @@
               <a href="" class="project__link">
                 <div class="project__thumb">
                   <img
-                    src="./images/portfolio/project-1/mb-prj1@x1.jpg"
+                    srcset="
+                      ./images/portfolio/tehnockryak/img354.jpg 354w,
+                      ./images/portfolio/tehnockryak/img370.jpg 370w,
+                      ./images/portfolio/tehnockryak/img450.jpg 450w,
+                      ./images/portfolio/tehnockryak/img708.jpg 708w,
+                      ./images/portfolio/tehnockryak/img740.jpg 740w,
+                      ./images/portfolio/tehnockryak/img900.jpg 900w
+                    "
+                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                    src="./images/portfolio/tehnockryak/img450.jpg"
                     alt="Проект Технокряк"
                     class="project__img"
-                    
+                    loading="lazy"
                   />
                   <div class="overlay">
                     <p class="overlay__text">
@@ -106,9 +115,18 @@
             <li class="projects__item">
               <a href="" class="project__link">
                 <img
-                  src="./images/portfolio/project-2/mb-prj2@x1.jpg"
+                  srcset="
+                    ./images/portfolio/poster/img354.jpg 354w,
+                    ./images/portfolio/poster/img370.jpg 370w,
+                    ./images/portfolio/poster/img450.jpg 450w,
+                    ./images/portfolio/poster/img708.jpg 708w,
+                    ./images/portfolio/poster/img740.jpg 740w,
+                    ./images/portfolio/poster/img900.jpg 900w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                  src="./images/portfolio/poster/img450.jpg"
                   alt="Постер New Orlean vs Golden Star"
-                
+                  loading="lazy"
                 />
                 <div class="project__description">
                   <h2 class="project__header">Постер New Orlean vs Golden Star</h2>
@@ -119,9 +137,18 @@
             <li class="projects__item">
               <a href="" class="project__link">
                 <img
-                  src="./images/portfolio/project-3/mb-prj3@x1.jpg"
+                  srcset="
+                    ./images/portfolio/seafood/img354.jpg 354w,
+                    ./images/portfolio/seafood/img370.jpg 370w,
+                    ./images/portfolio/seafood/img450.jpg 450w,
+                    ./images/portfolio/seafood/img708.jpg 708w,
+                    ./images/portfolio/seafood/img740.jpg 740w,
+                    ./images/portfolio/seafood/img900.jpg 900w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                  src="./images/portfolio/seafood/img450.jpg"
                   alt="Ресторан Seafood"
-                
+                  loading="lazy"
                 />
                 <div class="project__description">
                   <h2 class="project__header">Ресторан Seafood</h2>
@@ -131,7 +158,20 @@
             </li>
             <li class="projects__item">
               <a href="" class="project__link">
-                <img src="./images/portfolio/project-4/mb-prj4@x1.jpg" alt="Проєкт Prime" />
+                <img
+                  srcset="
+                    ./images/portfolio/prime/img354.jpg 354w,
+                    ./images/portfolio/prime/img370.jpg 370w,
+                    ./images/portfolio/prime/img450.jpg 450w,
+                    ./images/portfolio/prime/img708.jpg 708w,
+                    ./images/portfolio/prime/img740.jpg 740w,
+                    ./images/portfolio/prime/img900.jpg 900w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                  src="./images/portfolio/prime/img450.jpg"
+                  alt="Проєкт Prime"
+                  loading="lazy"
+                />
                 <div class="project__description">
                   <h2 class="project__header">Проєкт Prime</h2>
                   <p class="project__text">Маркетинг</p>
@@ -140,7 +180,20 @@
             </li>
             <li class="projects__item">
               <a href="" class="project__link">
-                <img src="./images/portfolio/project-5/mb-prj5@x1.jpg" alt="Проєкт Boxes"  />
+                <img
+                  srcset="
+                    ./images/portfolio/boxes/img354.jpg 354w,
+                    ./images/portfolio/boxes/img370.jpg 370w,
+                    ./images/portfolio/boxes/img450.jpg 450w,
+                    ./images/portfolio/boxes/img708.jpg 708w,
+                    ./images/portfolio/boxes/img740.jpg 740w,
+                    ./images/portfolio/boxes/img900.jpg 900w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                  src="./images/portfolio/boxes/img450.jpg"
+                  alt="Проєкт Boxes"
+                  loading="lazy"
+                />
                 <div class="project__description">
                   <h2 class="project__header">Проєкт Boxes</h2>
                   <p class="project__text">Додаток</p>
@@ -150,9 +203,18 @@
             <li class="projects__item">
               <a href="" class="project__link">
                 <img
-                  src="./images/portfolio/project-6/mb-prj6@x1.jpg"
+                  srcset="
+                    ./images/portfolio/inspiration/img354.jpg 354w,
+                    ./images/portfolio/inspiration/img370.jpg 370w,
+                    ./images/portfolio/inspiration/img450.jpg 450w,
+                    ./images/portfolio/inspiration/img708.jpg 708w,
+                    ./images/portfolio/inspiration/img740.jpg 740w,
+                    ./images/portfolio/inspiration/img900.jpg 900w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                  src="./images/portfolio/inspiration/img450.jpg"
                   alt="Inspiration has no Borders"
-                  
+                  loading="lazy"
                 />
                 <div class="project__description">
                   <h2 class="project__header">Inspiration has no Borders</h2>
@@ -163,9 +225,18 @@
             <li class="projects__item">
               <a href="" class="project__link">
                 <img
-                  src="./images/portfolio/project-7/mb-prj7@x1.jpg"
+                  srcset="
+                    ./images/portfolio/limited/img354.jpg 354w,
+                    ./images/portfolio/limited/img370.jpg 370w,
+                    ./images/portfolio/limited/img450.jpg 450w,
+                    ./images/portfolio/limited/img708.jpg 708w,
+                    ./images/portfolio/limited/img740.jpg 740w,
+                    ./images/portfolio/limited/img900.jpg 900w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                  src="./images/portfolio/limited/img450.jpg"
                   alt="Видання Limited Edition"
-                  
+                  loading="lazy"
                 />
                 <div class="project__description">
                   <h2 class="project__header">Видання Limited Edition</h2>
@@ -175,7 +246,20 @@
             </li>
             <li class="projects__item">
               <a href="" class="project__link">
-                <img src="./images/portfolio/project-8/mb-prj8@x1.jpg" alt="Проєкт LAB" />
+                <img
+                  srcset="
+                    ./images/portfolio/lab/img354.jpg 354w,
+                    ./images/portfolio/lab/img370.jpg 370w,
+                    ./images/portfolio/lab/img450.jpg 450w,
+                    ./images/portfolio/lab/img708.jpg 708w,
+                    ./images/portfolio/lab/img740.jpg 740w,
+                    ./images/portfolio/lab/img900.jpg 900w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                  src="./images/portfolio/lab/img450.jpg"
+                  alt="Проєкт LAB"
+                  loading="lazy"
+                />
                 <div class="project__description">
                   <h2 class="project__header">Проєкт LAB</h2>
                   <p class="project__text">Маркетинг</p>
@@ -185,9 +269,18 @@
             <li class="projects__item">
               <a href="" class="project__link">
                 <img
-                  src="./images/portfolio/project-9/mb-prj9@x1.jpg"
+                  srcset="
+                    ./images/portfolio/grow-business/img354.jpg 354w,
+                    ./images/portfolio/grow-business/img370.jpg 370w,
+                    ./images/portfolio/grow-business/img450.jpg 450w,
+                    ./images/portfolio/grow-business/img708.jpg 708w,
+                    ./images/portfolio/grow-business/img740.jpg 740w,
+                    ./images/portfolio/grow-business/img900.jpg 900w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                  src="./images/portfolio/grow-business/img450.jpg"
                   alt="Growing Business"
-                  
+                  loading="lazy"
                 />
                 <div class="project__description">
                   <h2 class="project__header">Growing Business</h2>
@@ -203,10 +296,10 @@
       <div class="container">
         <div class="footer-container">
           <div class="footer-address">
-            <a href="./index.html" class="logo footer__logo">
+            <a href="./index.html" class="footer__logo">
               <span class="logo--blue">Web</span>Studio
             </a>
-            <address>
+            <address class="address__wrapper">
               <p class="footer-address__text">м. Київ, пр-т Лесі Українки, 26</p>
               <a href="mailto:info@devstudio.com" class="footer-address__contact"
                 >info@devstudio.com</a
@@ -281,6 +374,7 @@
                   class="mailing__input"
                   placeholder="E-mail"
                   id="mailing"
+                  required
                 />
               </label>
               <button type="submit" class="mailing__btn">

@@ -1,16 +1,16 @@
 .contact {
-  margin-left: auto;
+  // margin-left: auto;
   display: none;
   gap: 10px;
 
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
-    gap: 50px;
+    gap: 40px;
+    flex-direction: row;
   }
 }
 
@@ -21,22 +21,25 @@
 
   font-weight: 500;
   font-size: 12px;
-  line-height: 14px;
-  
+  line-height: calc(14 / 12);
+
   letter-spacing: 0.02em;
-  
+
   color: #757575;
   text-decoration: none;
 
   transition-property: color;
   transition: var(--main-animation);
-  
+
   &:hover,
   &:focus {
     color: var(--active-color);
   }
 
   @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -44,10 +47,13 @@
 
 .contact__icon {
   fill: currentColor;
-  
+
   @media screen and (max-width: 1199px) {
     width: 14px;
     height: 10px;
   }
-  
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
 }

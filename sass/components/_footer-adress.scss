@@ -1,3 +1,20 @@
+.footer-address {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
+}
+
+.address__wrapper {
+  display: block;
+}
+
 .footer__logo {
   display: block;
   font-family: var(--logo-font);
@@ -11,6 +28,10 @@
 
   text-decoration: none;
   color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 28px;
+  }
 }
 
 .footer-address__text {

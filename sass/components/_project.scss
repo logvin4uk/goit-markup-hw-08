@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent);
-  --item:1;
+  --items:1;
 
   @media screen and (min-width: 768px) {
     --items: 2;
@@ -15,7 +15,6 @@
 
 .projects__item {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
-  min-width: 450px;
   display: flex;
 
   @media screen and (min-width: 768px) {

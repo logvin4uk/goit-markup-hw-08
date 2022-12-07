@@ -1,17 +1,21 @@
+nav {
+  display: block;
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+  }
+}
+
 .site-nav {
   display: none;
   list-style-type: none;
-  
 
-   @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     gap: 50px;
-    margin-right: 96px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      display: flex;
-}
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 40px;
+  }
 }
 
 .site-nav__link {
@@ -20,6 +24,7 @@
 
   padding-top: 32px;
   padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -54,7 +59,7 @@
     transition-property: opacity;
     transition: var(--main-animation);
   }
-  
+
   &:hover::after,
   &:focus::after {
     opacity: 1;

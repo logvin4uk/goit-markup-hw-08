@@ -3,3 +3,6 @@ body {
     background: var(--bgcolor);
     color: var(--text-color);
   }
+body.modal-open {
+  overflow: hidden;
+}

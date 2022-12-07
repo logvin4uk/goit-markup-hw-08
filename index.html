@@ -20,7 +20,7 @@
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
   <body style>
-    <div class="header-container">
+    <div class="header-wrapper">
       <header class="header">
         <a href="./index.html" class="logo"><span class="logo--blue">Web</span>Studio</a>
         <nav>
@@ -126,26 +126,49 @@
               <li class="skills__item">
                 <div class="skills__overlay">
                   <img
-                    src="./images/img_analist.jpg"
-                    alt="Чіткій розбір технічного завдання"
+                    srcset="
+                      ./images/studio/what-we-do-apps@1x.jpg 1x,
+                      ./images/studio/what-we-do-apps@2x.jpg 2x
+                    "
+                    src="./images/studio/what-we-do-apps@1x.jpg"
+                    alt="Десктопні додатки"
                     width="370"
+                    loading="lazy"
                   />
                   <div class="skills__container">
                     <p class="skills__text">Десктопні додатки</p>
                   </div>
                 </div>
               </li>
-              <li class="item">
+              <li class="skills__item">
                 <div class="skills__overlay">
-                  <img src="./images/img_crossplatform.jpg" alt="Кросплатформа" width="370" />
+                  <img
+                    srcset="
+                      ./images/studio/what-we-do-mobile@1x.jpg 1x,
+                      ./images/studio/what-we-do-mobile@2x.jpg 2x
+                    "
+                    src="./images/studio/what-we-do-mobile@1x.jpg"
+                    alt="Мобільні додатки"
+                    width="370"
+                    loading="lazy"
+                  />
                   <div class="skills__container">
                     <p class="skills__text">Мобільні додатки</p>
                   </div>
                 </div>
               </li>
-              <li class="item">
+              <li class="skills__item">
                 <div class="skills__overlay">
-                  <img src="./images/img_ourcolors.jpg" alt="Палітра кольорів" width="370" />
+                  <img
+                    srcset="
+                      ./images/studio/what-we-do-design@1x.jpg 1x,
+                      ./images/studio/what-we-do-design@2x.jpg 2x
+                    "
+                    src="./images/studio/what-we-do-design@1x.jpg"
+                    alt="Дизайнерські рішення"
+                    width="370"
+                    loading="lazy"
+                  />
                   <div class="skills__container">
                     <p class="skills__text">Дизайнерські рішення</p>
                   </div>
@@ -162,10 +185,19 @@
           <ul class="command__list">
             <li class="command__item">
               <img
-                src="./images/studio/img@1x-ihor.jpg"
+                srcset="
+                  ./images/studio/ihor/ihor-270.jpg 270w,
+                  ./images/studio/ihor/ihor-354.jpg 354w,
+                  ./images/studio/ihor/ihor-450.jpg 450w,
+                  ./images/studio/ihor/ihor-540.jpg 540w,
+                  ./images/studio/ihor/ihor-708.jpg 708w,
+                  ./images/studio/ihor/ihor-900.jpg 900w
+                "
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                src="./images/studio/ihor/ihor-450.jpg"
                 alt="Product Designer - Ігор Дем'яненко"
-                width="450"
                 class="command__images"
+                loading="lazy"
               />
               <div class="member">
                 <h3 class="member__name">Ігор Дем'яненко</h3>
@@ -228,10 +260,20 @@
             </li>
             <li class="command__item">
               <img
+                srcset="
+                  ./images/studio/olha/olha-270.jpg 270w,
+                  ./images/studio/olha/olha-354.jpg 354w,
+                  ./images/studio/olha/olha-450.jpg 450w,
+                  ./images/studio/olha/olha-540.jpg 540w,
+                  ./images/studio/olha/olha-708.jpg 708w,
+                  ./images/studio/olha/olha-900.jpg 900w
+                "
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                src="./images/studio/olha/olha-450.jpg"
                 src="./images/studio/img@1x-olha.jpg"
                 alt="Ольга Рєпіна - Frontend Developer"
-                width="450"
                 class="command__images"
+                loading="lazy"
               />
               <div class="member">
                 <h3 class="member__name">Ольга Рєпіна</h3>
@@ -294,10 +336,19 @@
             </li>
             <li class="command__item">
               <img
-                src="./images/studio/img@1x-mykola.jpg"
+                srcset="
+                  ./images/studio/mykola/mykola-270.jpg 270w,
+                  ./images/studio/mykola/mykola-354.jpg 354w,
+                  ./images/studio/mykola/mykola-450.jpg 450w,
+                  ./images/studio/mykola/mykola-540.jpg 540w,
+                  ./images/studio/mykola/mykola-708.jpg 708w,
+                  ./images/studio/mykola/mykola-900.jpg 900w
+                "
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                src="./images/studio/mykola/mykola-450.jpg"
                 alt="Микола Тарасов-Marketing"
-                width="450"
                 class="command__images"
+                loading="lazy"
               />
               <div class="member">
                 <h3 class="member__name">Микола Тарасов</h3>
@@ -360,10 +411,19 @@
             </li>
             <li class="command__item">
               <img
-                src="./images/studio/img@1x-misha.jpg"
+                srcset="
+                  ./images/studio/misha/misha-270.jpg 270w,
+                  ./images/studio/misha/misha-354.jpg 354w,
+                  ./images/studio/misha/misha-450.jpg 450w,
+                  ./images/studio/misha/misha-540.jpg 540w,
+                  ./images/studio/misha/misha-708.jpg 708w,
+                  ./images/studio/misha/misha-900.jpg 900w
+                "
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                src="./images/studio/misha/misha-450.jpg"
                 alt="Михайло Єрмаков-UI Designer"
-                width="450"
                 class="command__images"
+                loading="lazy"
               />
               <div class="member">
                 <h3 class="member__name">Михайло Єрмаков</h3>
@@ -484,10 +544,10 @@
       <div class="container">
         <div class="footer-container">
           <div class="footer-address">
-            <a href="./index.html" class="logo footer__logo">
+            <a href="./index.html" class="footer__logo">
               <span class="logo--blue">Web</span>Studio
             </a>
-            <address>
+            <address class="address__wrapper">
               <p class="footer-address__text">м. Київ, пр-т Лесі Українки, 26</p>
               <a href="mailto:info@devstudio.com" class="footer-address__contact"
                 >info@devstudio.com</a
@@ -562,6 +622,7 @@
                   class="mailing__input"
                   placeholder="E-mail"
                   id="mailing"
+                  required
                 />
               </label>
               <button type="submit" class="mailing__btn">
@@ -651,23 +712,22 @@
       <div class="menu-adress">
         <a href="tel:+38 096 111 11 11" class="menu-adress__phone">+38 096 111 11 11</a>
         <a href="mailto:info@devstudio.com" class="menu-adress__mail">info@devstudio.com</a>
-      
 
-      <ul class="menu-social">
-        <li class="menu-social__item">
-          <a href="https://www.instagram.com/" class="menu-social__link">Instagram</a>
-        </li>
-        <li class="menu-social__item">
-          <a href="https://www.facebook.com/" class="menu-social__link">Twitter</a>
-        </li>
-        <li class="menu-social__item">
-          <a href="https://twitter.com/" class="menu-social__link">Facebook</a>
-        </li>
-        <li class="menu-social__item">
-          <a href="https://www.linkedin.com/" class="menu-social__link">LinkedIn</a>
-        </li>
-      </ul>
-    </div>
+        <ul class="menu-social">
+          <li class="menu-social__item">
+            <a href="https://www.instagram.com/" class="menu-social__link">Instagram</a>
+          </li>
+          <li class="menu-social__item">
+            <a href="https://www.facebook.com/" class="menu-social__link">Twitter</a>
+          </li>
+          <li class="menu-social__item">
+            <a href="https://twitter.com/" class="menu-social__link">Facebook</a>
+          </li>
+          <li class="menu-social__item">
+            <a href="https://www.linkedin.com/" class="menu-social__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
     <!--scripts-->
     <script

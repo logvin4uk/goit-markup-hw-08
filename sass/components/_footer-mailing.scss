@@ -1,15 +1,27 @@
-.mailing{
+.mailing {
   width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+  }
 }
 
 .mailing__form {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  gap: 20px;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 }
 
-.mailing__label{
+.mailing__label {
   width: 100%;
 }
 .mailing__input {
@@ -38,7 +50,7 @@
 
   transition-property: border-color;
   transition: var(--main-animation);
-  
+
   &:focus {
     border-color: var(--active-color);
   }
